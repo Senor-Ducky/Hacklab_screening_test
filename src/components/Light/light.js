@@ -38,7 +38,7 @@ class Light extends React.Component {
           this.setState({
             red: colors.grey,
             yellow: colors.grey,
-            green: colors.grey,
+            green: colors.green,
             next: 'green'
           });
           break;
@@ -52,9 +52,9 @@ class Light extends React.Component {
           break;
         case "green":
           this.setState({
-            red: colors.grey,
+            red: colors.red,
             yellow: colors.grey,
-            green: colors.green,
+            green: colors.grey,
             next: 'yellow'
           });
           break;
