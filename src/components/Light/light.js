@@ -111,14 +111,14 @@ class Light extends React.Component {
         setInterval(()=>{
           this.handeLightChange()
           greenDone = true;
-        }, 15000)
+        }, 5000)
       }
 
       if( redDone === true && greenDone === true && yellowDone === false) {
         setInterval(()=>{
           this.handeLightChange()
           yellowDone = true;
-        }, 5000)
+        }, 15000)
       }
 
       redDone = false;
