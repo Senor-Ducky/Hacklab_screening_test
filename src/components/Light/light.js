@@ -26,7 +26,7 @@ class Light extends React.Component {
       red: colors.red,
       yellow: colors.grey,
       green: colors.grey,
-      next: 'yellow'
+      next: 'green'
     }
 
     
@@ -45,16 +45,16 @@ class Light extends React.Component {
         case "yellow":
           this.setState({
             red: colors.grey,
-            yellow: colors.grey,
-            green: colors.green,
+            yellow: colors.yellow,
+            green: colors.grey,
             next: 'red'
           });
           break;
         case "green":
           this.setState({
-            red: colors.red,
+            red: colors.grey,
             yellow: colors.grey,
-            green: colors.grey,
+            green: colors.green,
             next: 'yellow'
           });
           break;
@@ -80,6 +80,7 @@ class Light extends React.Component {
       });
 
       greenDone = true;
+
     }
     
     redClick = () => {
@@ -97,6 +98,7 @@ class Light extends React.Component {
    
 
     componentDidMount() {
+ 
 
       if( redDone === false) {
         setInterval(()=>{
