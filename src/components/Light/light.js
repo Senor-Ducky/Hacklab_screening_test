@@ -66,7 +66,7 @@ class Light extends React.Component {
         red: colors.grey,
         yellow: colors.grey,
         green: colors.green,
-        
+        next: 'green'
       });
       redDone = true;
     }
@@ -76,6 +76,7 @@ class Light extends React.Component {
         red: colors.grey,
         yellow: colors.yellow,
         green: colors.grey,
+        next:'yellow'
         
       });
 
@@ -88,7 +89,7 @@ class Light extends React.Component {
         red: colors.red,
         yellow: colors.grey,
         green: colors.grey,
-        
+        next: 'red'
       });
 
       greenDone = true;
